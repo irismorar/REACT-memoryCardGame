@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: hsla(10, 5%, 15%, 1);
+}
+
+.app-container {
+  min-width: clamp(50rem, 80%, 70rem);
+  margin-bottom: 3rem;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 6rem;
+  text-align: center;
+  color: hsla(169, 20%, 33%, 1);
+  margin: 1rem 0 3rem 0;
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.cards-container {
+  margin: 0 auto;
+  width: 64rem;
+  height: calc(100vh - 20rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  color: hsla(10, 5%, 55%, 1);
+  width: 15rem;
+  height: 15rem;
+  background-color: hsla(204, 18%, 33%, 1);
+  border: solid  hsla(10, 5%, 55%, 1);
+  border-color:  hsla(10, 5%, 55%, 1);
+  border-width: 3px 4px 3px 5px;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(2deg);
+}
+
+.oddboxinner{
+  margin: 15px;
+  transform: rotate(-2deg);
+}
