@@ -17,7 +17,7 @@ export default function App() {
       <h1
         style={{
           color:
-            currentCardPairIndices.length !== 0 || movesCounter !== 0
+            currentCardPairIndices.length !== 0 || movesCounter !== 20
               ? "hsla(152, 39%, 20%, 1)"
               : "hsla(152, 39%, 45%, 1)",
         }}
@@ -43,34 +43,20 @@ export default function App() {
           })}
         </section>
         {!!movesCounter &&
-          (movesCounter <= 1 ? (
-            <div
-              className="attempts"
-              style={{
-                textDecorationThickness: `${movesCounter}px`,
-              }}
-            >
-              {movesCounter} try!
-            </div>
+          (movesCounter === 1 ? (
+            <div className="attempts">still {movesCounter} try!</div>
           ) : (
-            <div
-              className="attempts"
-              style={{
-                textDecorationThickness: `${movesCounter}px`,
-              }}
-            >
-              {movesCounter} tries!
-            </div>
+            <div className="attempts">still {movesCounter} tries!</div>
           ))}
       </main>
 
-      {movesCounter <= 20 && flippedUpCardIndices.length === 16 && (
+      {movesCounter >= 0 && flippedUpCardIndices.length === 16 && (
         <div className="alert-container">
           <div className="alert-message">{winningMessage}</div>
         </div>
       )}
 
-      {movesCounter === 20 && flippedUpCardIndices.length < 16 && (
+      {movesCounter === 0 && flippedUpCardIndices.length < 16 && (
         <div className="alert-container">
           <div className="alert-message">{lossMessage}</div>
         </div>

@@ -39,9 +39,9 @@ const winningMessages = [
   `Victory! The legends have been updated.`,
   `Congrats! Achievement unlocked: TOTAL DOMINATION!`,
   `Congrats! You’ve successfully embarrassed your opponents.`,
-  `High five! You made the pixels proud.`,
-  `Your victory has been documented for future generations.`,
-  `You didn’t just win, you redefined winning.`,
+  `High five! You made the pixels proud. Congrats!`,
+  `Your victory has been documented for future generations. Proud!`,
+  `Extraordinary! You didn’t just win, you redefined winning.`,
 ];
 
 const shuffleWinningMessages = () => {
@@ -68,7 +68,7 @@ const areCardsIdentical = (card1, card2) => {
 export function useMemoryCardsLogic() {
   const [flippedUpCardIndices, setFlippedUpCardIndices] = useState([]); //all indeces of the cards flipped up
   const [currentCardPairIndices, setCurrentCardPairIndices] = useState([]);
-  const [movesCounter, setMovesCounter] = useState(0);
+  const [movesCounter, setMovesCounter] = useState(20);
 
   function flipCardUp(cardIndex) {
     if (currentCardPairIndices.length < 2) {
@@ -77,7 +77,7 @@ export function useMemoryCardsLogic() {
       });
       if (currentCardPairIndices.length === 1) {
         setMovesCounter((counter) => {
-          return counter + 1;
+          return counter - 1;
         });
         const card1Index = currentCardPairIndices[0];
         const card2Index = cardIndex;
