@@ -20,7 +20,7 @@ const cardValues = [
 ];
 
 const lossMessages = [
-  `Breaking news: you tried…\nbut the game said NOPE!\nBye!`,
+  `Breaking news: you tried…\nbut the game said NOPE.\nBye!`,
   `Plot twist: you lost.\nEven the tutorial is concerned.\nBye!`,
   `Good game!\nWell…for everyone else.\nBye!`,
   `If losing was an Olympic sport, you’d finally get gold!\nBye!`,

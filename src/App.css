@@ -70,7 +70,7 @@ body {
 .alert-container {
   width: 100vw;
   height: 100vh;
-  background-color: hsla(0, 0%, 0%, .4);
+  background-color: hsla(0, 0%, 0%, .5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,10 +82,10 @@ body {
 .alert-message {
   width: 100%;
   line-height: 1.6;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: 800;
   background-color: hsla(152, 39%, 45%, .8);
-  padding: 2rem 0;
+  padding: 1.3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,29 +96,29 @@ body {
 }
 
 /* Tablets */
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
   .alert-message {
-    font-size: 2.3rem;
+    font-size: 1.6rem;
   }
 }
 
 /* Small tablets / large phones */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   .alert-message {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
 /* Phones */
-@media (max-width: 480px) {
+@media (max-width: 485px) {
   .alert-message {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
 /* Very small phones */
 @media (max-width: 360px) {
   .alert-message {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
