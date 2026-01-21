@@ -19,7 +19,7 @@ export default function App() {
           <span
             style={{
               color:
-                currentCardPairIndices.length !== 0 || movesCounter !== 20
+                currentCardPairIndices.length !== 0 || movesCounter !== 19
                   ? "hsla(152, 39%, 20%, 1)"
                   : "hsla(152, 39%, 45%, 1)",
             }}
