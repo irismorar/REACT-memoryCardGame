@@ -82,7 +82,7 @@ body {
 .alert-message {
   width: 100%;
   line-height: 1.6;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   background-color: hsla(152, 39%, 45%, .8);
   padding: 2rem 0;
@@ -98,27 +98,27 @@ body {
 /* Tablets */
 @media (max-width: 1024px) {
   .alert-message {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 }
 
 /* Small tablets / large phones */
 @media (max-width: 768px) {
   .alert-message {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 
 /* Phones */
 @media (max-width: 480px) {
   .alert-message {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
 /* Very small phones */
 @media (max-width: 360px) {
   .alert-message {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 }
