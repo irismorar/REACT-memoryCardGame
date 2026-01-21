@@ -20,13 +20,13 @@ const cardValues = [
 ];
 
 const lossMessages = [
-  `Breaking news: you tried… and the game said NOPE! Bye!`,
-  `Plot twist: you lost. Even the tutorial is concerned. Bye!`,
-  `Good game! Well… for everyone else. Bye!`,
-  `If losing was an Olympic sport, you’d finally get gold! Bye!`,
-  `Don’t worry, losing builds character. You should be very strong by now. Bye!`,
-  `You didn’t lose. You just temporarily evacuated the winner’s circle. Bye!`,
-  `Game over… but the embarrassment lives on. Bye!`,
+  `Breaking news: you tried…\nbut the game said NOPE!\nBye!`,
+  `Plot twist: you lost.\nEven the tutorial is concerned.\nBye!`,
+  `Good game!\nWell…for everyone else.\nBye!`,
+  `If losing was an Olympic sport, you’d finally get gold!\nBye!`,
+  `Don’t worry, losing builds character.\nYou should be very strong by now.\nBye!`,
+  `You didn’t lose.\nYou just temporarily evacuated the winner’s circle.\nBye!`,
+  `Game over…\nbut the embarrassment lives on.\nBye!`,
 ];
 
 const shuffleLossMessages = () => {
@@ -35,13 +35,13 @@ const shuffleLossMessages = () => {
 const lossMessage = shuffleLossMessages();
 
 const winningMessages = [
-  `Alert: someone just broke the scoreboard! Congrats!`,
-  `Victory! The legends have been updated.`,
-  `Congrats! Achievement unlocked: TOTAL DOMINATION!`,
-  `Congrats! You’ve successfully embarrassed your opponents.`,
-  `High five! You made the pixels proud. Congrats!`,
-  `Your victory has been documented for future generations. Proud!`,
-  `Extraordinary! You didn’t just win, you redefined winning.`,
+  `Alert:\nsomeone just broke the scoreboard!\nCongrats!`,
+  `Victory!\nThe legends have been updated.`,
+  `Congrats!\nAchievement unlocked: TOTAL DOMINATION!`,
+  `Congrats!\nYou’ve successfully embarrassed your opponents.`,
+  `High five!\nYou made the pixels proud. Congrats!`,
+  `Your victory has been documented for future generations.\nProud!`,
+  `Extraordinary!\nYou didn’t just win, you redefined winning.`,
 ];
 
 const shuffleWinningMessages = () => {
@@ -68,7 +68,7 @@ const areCardsIdentical = (card1, card2) => {
 export function useMemoryCardsLogic() {
   const [flippedUpCardIndices, setFlippedUpCardIndices] = useState([]); //all indeces of the cards flipped up
   const [currentCardPairIndices, setCurrentCardPairIndices] = useState([]);
-  const [movesCounter, setMovesCounter] = useState(20);
+  const [movesCounter, setMovesCounter] = useState(19);
 
   function flipCardUp(cardIndex) {
     if (currentCardPairIndices.length < 2) {
